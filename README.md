@@ -1,1 +1,1 @@
-# Scientific-Computing
+# Telco-Customer-Churn-Prediction
