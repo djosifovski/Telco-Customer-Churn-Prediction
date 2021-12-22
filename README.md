@@ -1,1 +1,11 @@
 # Telco-Customer-Churn-Prediction
+- The goal of this project is to predict whether a client will remain or leave a fictional telco.
+- The problem is defined as binary classification, and modelled with gradient boosting algorithms.
+- The following algorithms are used:
+    - `scikit-learn`'s Gradient Boosting algorithm,
+    - `XGBoost`;
+    - `LightGBM`;
+    - `CatBoost`.
+- $F_{1}$ is chosen as a single value evaluation metric. All of the models have relatively similar performance where `LightGBM` excelling with its default values of the hyperparameters with $F_{1}$ of 0.874552.
+- The hyperparameter optimization proved to be more difficult then anticipated because of lack of computational resources. Randomized search was applied a few times, and `XGBoost` with $F_{1}$ of 0.872340 is has the best performace.
+- The overall most optimal model for this application is `LightGBM` with its default values of the hyperparameters.
